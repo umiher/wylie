@@ -1,0 +1,20 @@
+
+
+
+
+
+let header=document.auerySelector("#start");
+
+let sectionList=document.querySelectorAll("section > div");
+
+// 빈 배열로 페이지 리스트를 작성합니다.
+
+let pageList=[header];
+
+sectionList.forEach(function(item){
+	// id 값이 signiture가 아닐 경우,
+	if(item.getAttribute("id") != "signiture"){
+		// 뒤에 영역에 배열자로 추가합니다.
+		pageList.push(item);
+	}
+});
