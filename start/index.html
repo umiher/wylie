@@ -10,47 +10,67 @@
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
 <script src="js/main.js"></script>
 </head>
 
 <body>
 <div class="container">
 	<div id="start">
+		<div class="skip_nav">
+			<a href="">본문 바로가기</a>
+		</div>
 		<header id="header">
-			<div class="top">
-				<h1 id="logo"><a href="">logo</a></h1>
-				<nav id="gnb">
-					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="">BUSINESS</a></li>
-						<li><a href="">PORTFOLIO</a></li>
-						<li><a href="">CULTURE</a></li>
-						<li><a href="">AWARDS</a></li>
-						<li><a href="">CONTACT</a></li>
-					</ul>
-				</nav>
+			<div class="menu">
+				<div class="menu_inner">
+					<h1 id="logo"><a href="">logo</a></h1>
+					<nav id="gnb">
+						<ul>
+							<li><a href="#header">HOME</a></li>
+							<li><a href="#business">BUSINESS</a></li>
+							<li><a href="#portfolio">PORTFOLIO</a></li>
+							<li><a href="#culture">CULTURE</a></li>
+							<li><a href="#award">AWARDS</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="mobile">
+					<nav id="mobile_gnb">
+						<ul>
+							<li><a href="#header">HOME</a></li>
+							<li><a href="#business">BUSINESS</a></li>
+							<li><a href="#portfolio">PORTFOLIO</a></li>
+							<li><a href="#culture">CULTURE</a></li>
+							<li><a href="#award">AWARDS</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
 				<a href="" class="tab"><span>tab</span></a>
+				<div class="dim"></div>
+			</div>
+			<div class="main_slider">
+				<div class="desc">
+					<div class="inner">
+						<p>value of WYLIE</p>
+						<h2>
+							꿈을꾸고 실현을 상상하며<br>
+							가치를 함께 합니다.
+						</h2>
+						<a href="" class="btn">MORE</a>
+					</div>
+				</div>
+				<div class="keyvisual"><img src="images/keyvisual.jpg" alt="keyvisual"></div>
 			</div>
 		</header>
-		<div class="main_slider">
-			<div class="desc">
-				<div class="inner">
-					<p>value of WYLIE</p>
-					<h2>
-						꿈을꾸고 실현을 상상하며<br>
-						가치를 함께 합니다.
-					</h2>
-					<a href="" class="btn">MORE</a>
-				</div>
-			</div>
-			<div class="keyvisual"><img src="images/keyvisual.jpg" alt="keyvisual"></div>
-		</div>
 	</div>
-	<div class="dimmed"></div>
 	<section id="business">
 		<div class="title">
 			<h3>BUSINESS</h3>
-			<p>고객사의 니즈에 최적화된 디지털 통합 마케팅 솔루션을 제공합니다.</p>
+			<p>고객사의 니즈에 최적화된<br class="br">디지털 통합 마케팅 솔루션을 제공합니다.</p>
 		</div>
 		<div class="content">
 			<ul>
@@ -184,7 +204,7 @@
 	<section id="culture">
 		<div class="title">
 			<h3>CULTURE</h3>
-			<p>매년 새롭게 구성되는 Club Wylie는 다양한 직군의 멤버들이 조를 이루어<br>한 해 동안 허락된 땡땡이를 즐기며 팀워크를 다집니다.</p>
+			<p>매년 새롭게 구성되는 Club Wylie는 다양한 직군의<br class="br">멤버들이 조를 이루어 한 해 동안 허락된 땡땡이를 즐기며 팀워크를 다집니다.</p>
 		</div>
 		<div class="content">
 			<ul>
@@ -269,7 +289,7 @@
 		<div class="inner">
 			<div class="title">
 				<h3>AWARDS</h3>
-				<p>주요 Award의 다양한 수상 실적을 통해 전문성과 크리에이티브를 검증받았습니다.</p>
+				<p>주요 Award의 다양한 수상 실적을 통해 전문성과<br class="br">크리에이티브를 검증받았습니다.</p>
 			</div>
 			<div class="content">
 				<ul>
@@ -329,8 +349,8 @@
 			</div>
 			<div class="content">
 				<form>
-					<div class="form_top">
-						<div class="input">
+					<div class="form_inner">
+						<div class="input_wrap">
 							<input type="text" placeholder="YOUR NAME*">
 							<input type="email" placeholder="YOUR E-MAIL*">
 							<input type="text" placeholder="SUBJECT*">
